@@ -4,7 +4,16 @@
   "manifest_version": 2,
   "content_scripts": [
     {
-      "matches": ["*://nymag.com/*"],
+      "matches": [
+        "*://nymag.com/*",
+        "*://www.thecut.com/*",
+        "*://www.vulture.com/*",
+        "*://www.grubstreet.com/*",
+        "*://localhost.thecut.com/*",
+        "*://localhost.dev.nymag.biz/*",
+        "*://localhost.grubstreet.com/*",
+        "*://localhost.vulture.com/*"
+      ],
       "css": ["highlight.css"]
     }
   ],
@@ -14,5 +23,14 @@
   "browser_action": {
     "name": "Click to highlight"
   },
-  "permissions": ["*://nymag.com/*"]
+  "permissions": [
+    "*://nymag.com/*",
+    "*://www.thecut.com/*",
+    "*://www.vulture.com/*",
+    "*://www.grubstreet.com/*",
+    "*://localhost.thecut.com/*",
+    "*://localhost.dev.nymag.biz/*",
+    "*://localhost.grubstreet.com/*",
+    "*://localhost.vulture.com/*"
+  ]
 }
