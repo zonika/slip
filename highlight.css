@@ -1,0 +1,18 @@
+[data-uri].color-0 {
+  outline: 2px solid rgb(219, 95, 97) !important;
+}
+[data-uri].color-1 {
+  outline: 3px dashed rgb(106, 241, 190) !important;
+}
+[data-uri].color-2 {
+  outline: 4px dotted rgb(231, 205, 30) !important;
+}
+[data-uri].color-3 {
+  outline: 5px solid rgb(149, 163, 240) !important;
+}
+[data-uri].color-4 {
+  outline: 4px dashed rgb(34, 37, 55) !important;
+}
+[data-uri].color-5 {
+  outline: 2px double rgb(255, 235, 235) !important;
+}
