@@ -1,5 +1,5 @@
 {
-  "name": "My extension",
+  "name": "Clay Slip",
   "version": "1.0",
   "manifest_version": 2,
   "content_scripts": [
@@ -18,10 +18,12 @@
     }
   ],
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["background.js"],
+    "persistent": false
   },
   "browser_action": {
-    "name": "Click to highlight"
+    "name": "Activate Clay Slip",
+    "default_icon": "clay.png"
   },
   "permissions": [
     "*://nymag.com/*",
