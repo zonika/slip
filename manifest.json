@@ -12,7 +12,8 @@
         "*://localhost.thecut.com/*",
         "*://localhost.dev.nymag.biz/*",
         "*://localhost.grubstreet.com/*",
-        "*://localhost.vulture.com/*"
+        "*://localhost.vulture.com/*",
+        "*://*.sites.aws.nymetro.com/*"
       ],
       "css": ["highlight.css"]
     }
@@ -33,6 +34,7 @@
     "*://localhost.thecut.com/*",
     "*://localhost.dev.nymag.biz/*",
     "*://localhost.grubstreet.com/*",
-    "*://localhost.vulture.com/*"
+    "*://localhost.vulture.com/*",
+    "*://*.sites.aws.nymetro.com/*"
   ]
 }
