@@ -6,7 +6,8 @@ Slip
 Slip is a Chrome extension that:
 
 - adds debugging borders to [Clay](https://github.com/clay) components
-- allows users to alt-click a component and bring up it's JSON data in another tab
+- shift+click opens the (unresolved) instance data in a new tab
+- alt+click opens the resolved component instance data in a new tab
 
 # To Install In Chrome
 - clone or download this repo
