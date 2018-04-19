@@ -19,8 +19,14 @@ function getKeyInput(e) {
   } else if (e.key === 'p' && keystroke === 'y') {
     hiddenInput.value = pageUri;
     copyInput();
+    if (selectedComponent) {
+      // reset the value to selected component uri if there is one
+      hiddenInput.value = selectedComponent.getAttribute('data-uri');
+    }
+    keystroke = '';
   } else if (e.key === 'c' && keystroke === 'y' && selectedComponent) {
     copyInput();
+    keystroke = '';
   }
 }
 
