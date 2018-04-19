@@ -12,27 +12,42 @@ components.forEach(addEvent);
 addHierarchyClass();
 
 document.addEventListener('keydown', getKeyInput);
+document.addEventListener('keyup', evaluateKeystroke);
+
+function evaluateKeystroke(e) {
+  if (keystroke === e.key) {
+    return;
+  }
+
+  if (e.key === 'p') {
+    hiddenInput.value = pageUri;
+  } else if (e.key === 'c' && selectedComponent) {
+    hiddenInput.value = selectedComponent.getAttribute('data-uri');
+  }
+
+  if (keystroke === 'y') {
+    copyInput();
+    keystroke = '';
+  } else if (keystroke === 'o') {
+    uri = hiddenInput.value;
+    opts = { url: `http://${uri}` };
+    chrome.runtime.sendMessage(opts);
+    keystroke = '';
+  }
+}
 
 function getKeyInput(e) {
   if (e.key === 'y') {
     keystroke = 'y';
-  } else if (e.key === 'p' && keystroke === 'y') {
-    hiddenInput.value = pageUri;
-    copyInput();
-    if (selectedComponent) {
-      // reset the value to selected component uri if there is one
-      hiddenInput.value = selectedComponent.getAttribute('data-uri');
-    }
-    keystroke = '';
-  } else if (e.key === 'c' && keystroke === 'y' && selectedComponent) {
-    copyInput();
-    keystroke = '';
+  } else if (e.key === 'o') {
+    keystroke = 'o';
   }
 }
 
 function copyInput() {
   hiddenInput.select();
   document.execCommand('copy');
+  hiddenInput.blur();
 }
 
 function addEvent(el) {
