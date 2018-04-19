@@ -14,6 +14,8 @@ Slip is a Chrome extension that:
 Currently...
 - keystroke 'y + c' copies uri of selected component to keyboard
 - keystroke 'y + p' copies page uri to keyboard
+- keystroke 'o + p' opens the page uri in a new tab
+- keystroke 'o + c' opens selected component uri into a new tab (or page uri if no component selected)
 
 # To Install In Chrome
 - clone or download this repo
