@@ -16,3 +16,11 @@
 [data-uri].color-5 {
   outline: 2px double rgb(255, 235, 235) !important;
 }
+[data-uri].slip-selected {
+  outline: 5px solid red !important;
+}
+
+.slip-hidden-input {
+  position: fixed;
+  top: -100px;
+}

@@ -10,7 +10,7 @@
         "*://www.vulture.com/*",
         "*://www.grubstreet.com/*",
         "*://localhost.thecut.com/*",
-        "*://localhost.dev.nymag.biz/*",
+        "*://localhost.nymag.com/*",
         "*://localhost.grubstreet.com/*",
         "*://localhost.vulture.com/*",
         "*://*.sites.aws.nymetro.com/*"
@@ -32,7 +32,7 @@
     "*://www.vulture.com/*",
     "*://www.grubstreet.com/*",
     "*://localhost.thecut.com/*",
-    "*://localhost.dev.nymag.biz/*",
+    "*://localhost.nymag.com/*",
     "*://localhost.grubstreet.com/*",
     "*://localhost.vulture.com/*",
     "*://*.sites.aws.nymetro.com/*"
